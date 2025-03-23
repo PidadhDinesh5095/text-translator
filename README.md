@@ -18,7 +18,7 @@ This is a simple Text Translator web application built using React.js. It allows
 
 ## Screenshots
 
-![Translator UI](assets/img.png)
+![Translator UI](img.png)
 
 ## Installation
 
