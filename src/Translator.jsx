@@ -65,7 +65,7 @@ const Translator = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-br from-purple-600 to-blue-500 text-white">
       <div className="p-8 w-full max-w-4xl bg-white text-black shadow-2xl rounded-2xl overflow-hidden">
-        <h1 className="text-3xl font-bold mb-6">Text in other languages </h1>
+        <h1 className="text-3xl font-bold mb-6">Translator</h1>
 
         <div className="flex items-center gap-4 mb-6">
           <div className="flex items-center gap-2">
