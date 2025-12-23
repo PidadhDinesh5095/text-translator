@@ -1,4 +1,4 @@
-# Text Translator
+# Text 
 
 This is a simple Text Translator web application built using React.js. It allows users to translate text between multiple languages using the Gemini API.
 
