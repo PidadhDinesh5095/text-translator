@@ -10,7 +10,7 @@ const languages = [
     { code: 'ja', name: 'Japanese', flag: 'https://flagcdn.com/jp.svg' },
     { code: 'it', name: 'Italian', flag: 'https://flagcdn.com/it.svg' },
     { code: 'pt', name: 'Portuguese', flag: 'https://flagcdn.com/pt.svg' },
-    { code: 'ru', name: 'Russian', flag: 'https://flagcdn.com/ru.svg' },
+    { code: 'ru', name: 'Rulinkssian', flag: 'https://flagcdn.com/ru.svg' },
     { code: 'bn', name: 'Bengali', flag: 'https://flagcdn.com/in.svg' },
     { code: 'ta', name: 'Tamil', flag: 'https://flagcdn.com/in.svg' },
     { code: 'te', name: 'Telugu', flag: 'https://flagcdn.com/in.svg' },
@@ -41,10 +41,7 @@ const Translator = () => {
     setInputText(translatedText);
     setTranslatedText('');
   };
-
-  const translateText = async () => {
-    if (!inputText) return alert('Please enter text to translate');
-    setLoading(true);
+  link
     try {
       const promptText = `Translate from ${languages.find(l => l.code === sourceLanguage)?.name} to ${languages.find(l => l.code === targetLanguage)?.name}: ${inputText}`;
       const response = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro:generateContent?key=AIzaSyBa1rUNG9UcKa4YZbrd7QLJlsYhIazG_z8`, {
@@ -68,7 +65,7 @@ const Translator = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-br from-purple-600 to-blue-500 text-white">
       <div className="p-8 w-full max-w-4xl bg-white text-black shadow-2xl rounded-2xl overflow-hidden">
-        <h1 className="text-3xl font-bold mb-6">Text Translator</h1>
+        <h1 className="text-3xl font-bold mb-6">Text in other languages </h1>
 
         <div className="flex items-center gap-4 mb-6">
           <div className="flex items-center gap-2">
