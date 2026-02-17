@@ -14,7 +14,7 @@ const languages = [
 ];
 
 const Translator = () => {
-  const [inputText, setInputText] = useState('');
+  const [inputText, The most common and natural way to say this in Hindi, using the widely understood English loanword "date," would be: * **If you are male:** मैं डेट पर जा रहा हूँ। (Main date par jaa rahaa hoon.) * **If you are female:** मैं डेट पर जा रही हूँ। (Main date par jaa rahee hoon.) **Explanation:** * **मैं (Main)**: I * **डेट पर (date par)**: on a date (the English word "date" is very commonly used in Hindi for this context, and "पर" means "on" or "for") * **जा रहा हूँ (jaa rahaa hoon)**: am going (for a male speaker) * **जा रही हूँ (jaa rahee hoon)**: am going (for a female speaker)setInputText] = useState('');
   const [translatedText, setTranslatedText] = useState('');
   const [sourceLanguage, setSourceLanguage] = useState('en');
   const [targetLanguage, setTargetLanguage] = useState('es');
@@ -37,7 +37,7 @@ const Translator = () => {
         languages.find(l => l.code === sourceLanguage)?.name
       } to ${
         languages.find(l => l.code === targetLanguage)?.name
-      }: ${inputText}`;
+      }: ${inputText} (give only text translated in targetLanguage`;
 
       const response = await fetch(
         `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=AIzaSyBrFmg_1Ravo-0B4btWte0lKo0HGeeyTEQ`,
@@ -143,5 +143,6 @@ const Translator = () => {
 };
 
 export default Translator;
+
 
 
